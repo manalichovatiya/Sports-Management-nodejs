@@ -11,11 +11,6 @@ const getCategoryList = async (filter,options) => {
     return Category.find();
 };
 
-// Get Category by name
-const getCategoryByName = async (category_name) => {
-  return Category.findOne({ category_name });
-};
-
 // Get Category details by id
 const getCategoryById = async (categoryId) => {
   return Category.findById(categoryId);
@@ -34,7 +29,6 @@ const deleteCategory = async (categoryId) => {
 module.exports = {
     createCategory,
     getCategoryList,
-    getCategoryByName,
     getCategoryById,
     updateDetails,
     deleteCategory

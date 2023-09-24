@@ -17,12 +17,12 @@ router.get(
   "/list",
   categoryController.getCategoryList
 )
-
+// delete category
 router.delete(
   "/delete/:categoryId",
   categoryController.deleteCategory
 )
-
+// update category
 router.put(
   "/update-category/:categoryId",
   categoryController.updateCategory

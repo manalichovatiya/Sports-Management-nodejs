@@ -9,9 +9,9 @@ const tokenSchema = mongoose.Schema(
       type: Date,
       default: null,
     },
-    user: {
+    player: {
       type: mongoose.Types.ObjectId,
-      ref: "User",
+      ref: "Players",
     },
   },
   {

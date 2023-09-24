@@ -4,9 +4,8 @@ const Joi = require("joi");
 const createBanner = {
   body: Joi.object({
     banner_name: Joi.string().required().trim(),
-    banner_description: Joi.string().optional(),
+    banner_description: Joi.string().required().optional(),
     sports_image: Joi.string().allow(""),
-    product: Joi.string().required(),
   }),
 };
 
