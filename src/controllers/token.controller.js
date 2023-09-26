@@ -29,7 +29,7 @@ const verifytoken = async (req, res) => {
   res.status(200).json({
     success: true,
     message: "Token successfully verified ! ",
-    data: req.user,
+    data: req.player,
   });
 };
 

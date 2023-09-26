@@ -21,7 +21,7 @@ const createPlayers = async (req, res) => {
 /** Get players list */
 const getPlayersList = async (req, res) => {
   try {
-    const getList = await playersService.getPlayersList(filter, options);
+    const getList = await playersService.getPlayersList();
 
     res.status(200).json({
       success: true,

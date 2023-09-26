@@ -15,7 +15,7 @@ const generateToken = async (reqBody) => {
 // Save token in our database
 const saveToken = async (reqBody) => {
   return Token.findOneAndUpdate(
-    { user: reqBody.user },
+    { player: reqBody.player },
     {
       $set: {
         ...reqBody,

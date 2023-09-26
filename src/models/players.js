@@ -10,8 +10,8 @@ const playerSchema = new mongoose.Schema(
             trim : true,
         },
         team : {
-            type: mongoose.Types.ObjectId,
-            ref: "Team",
+            type : String,
+            trim : true,
         },
         is_active : {
             type : Boolean,

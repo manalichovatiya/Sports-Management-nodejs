@@ -9,7 +9,7 @@ const router = express.Router();
 /** create players */
 router.post(
   "/create-players",
-  auth(),
+  // auth(),
   validate(playersValidation.createPlayers),
   playersController.createPlayers
 );
